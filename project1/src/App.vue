@@ -13,7 +13,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <nav class="align-center">
         <div class="flex space-x-4">
           <RouterLink class="text-black" to="/">Student</RouterLink>
-          <RouterLink class="text-black" to="/about">Advisor</RouterLink>
+          <RouterLink class="text-black" to="/advisor">Advisor</RouterLink>
         </div>
       </nav>
       <RouterView />

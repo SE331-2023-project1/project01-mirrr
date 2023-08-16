@@ -6,7 +6,7 @@ export interface StudentItem {
     image: string
 }
 
-export interface Advisor {
+export interface AdvisorItem {
     name: string
     surname: string
     image: string
