@@ -1,0 +1,144 @@
+{
+    "student": [
+        {
+            "id": 1,
+            "name": "Yuga",
+            "surname": "Aoyama",
+            "course": ["Ranged combat","Support"],
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/b/b9/Yuga_Aoyama_Portrait.png/revision/latest/scale-to-width-down/135?cb=20160619043516"
+        },{
+            "id": 2,
+            "name": "Mina",
+            "surname": "Ashido",
+            "course": ["Melee combat","Support"],
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/f/fd/Mina_Ashido_Portrait.png/revision/latest/scale-to-width-down/135?cb=20160619043731"
+        },{
+            "id": 3,
+            "name": "Tsuyu",
+            "surname": "Asui",
+            "course": ["Melee combat","Support"],
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/7/7c/Tsuyu_Asui_Portrait.png/revision/latest/scale-to-width-down/135?cb=20160619043915"
+        },{
+            "id": 4,
+            "name": "Tenya",
+            "surname": "Ida",
+            "course": ["Melee combat"],
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/c/ca/Tenya_Ida_Portrait.png/revision/latest/scale-to-width-down/135?cb=20160619044125"
+        },{
+            "id": 5,
+            "name": "Ochaco",
+            "surname": "Uraraka",
+            "course": ["Melee combat","Support"],
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/7/78/Ochaco_Uraraka_Portrait.png/revision/latest/scale-to-width-down/135?cb=20160619044306"
+        },{
+            "id": 6,
+            "name": "Mashirao",
+            "surname": "Ojiro",
+            "course": ["Melee combat"],
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/1/16/Mashirao_Ojiro_Portrait.png/revision/latest/scale-to-width-down/135?cb=20160619044553"
+        },{
+            "id": 7,
+            "name": "Denki",
+            "surname": "Kaminari",
+            "course": ["Melee combat","Support"],
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/b/b0/Denki_Kaminari_Portrait.png/revision/latest/scale-to-width-down/135?cb=20160619044711"
+        },{
+            "id": 8,
+            "name": "Eijiro",
+            "surname": "Kirishima",
+            "course": ["Melee combat"],
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/0/04/Eijiro_Kirishima_Portrait.png/revision/latest/scale-to-width-down/135?cb=20160619044805"
+        },{
+            "id": 9,
+            "name": "Koji",
+            "surname": "Koda",
+            "course": ["Melee combat","Support"],
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/5/5e/Koji_Koda_Portrait.png/revision/latest/scale-to-width-down/135?cb=20160619044919"
+        },{
+            "id": 10,
+            "name": "Rikido",
+            "surname": "Sato",
+            "course": ["Melee combat"],
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/e/eb/Rikido_Sato_Portrait.png/revision/latest/scale-to-width-down/135?cb=20160619044952"
+        },{
+            "id": 11,
+            "name": "Mezo",
+            "surname": "Shoji",
+            "course": ["Melee combat","Support"],
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/8/8b/Mezo_Shoji_Portrait.png/revision/latest/scale-to-width-down/135?cb=20160619045335"
+        },{
+            "id": 12,
+            "name": "Kyoka",
+            "surname": "Jiro",
+            "course": ["Medium-ranged combat","Support","Reconnaissance"],
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/3/32/Kyoka_Jiro_Portrait.png/revision/latest/scale-to-width-down/135?cb=20160619045418"
+        },{
+            "id": 13,
+            "name": "Hanta",
+            "surname": "Sero",
+            "course": ["Long-ranged combat","Support"],
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/c/ca/Hanta_Sero_Portrait.png/revision/latest/scale-to-width-down/135?cb=20160619045536"
+        },{
+            "id": 14,
+            "name": "Fumikage",
+            "surname": "Tokoyami",
+            "course": ["Melee combat"],
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/6/6c/Fumikage_Tokoyami_Portrait.png/revision/latest/scale-to-width-down/135?cb=20160619045620"
+        },{
+            "id": 15,
+            "name": "Shoto",
+            "surname": "Todoroki",
+            "course": ["Long-ranged combat"],
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/7/7f/Shoto_Todoroki_Portrait.png/revision/latest/scale-to-width-down/135?cb=20160619045658"
+        },{
+            "id": 16,
+            "name": "Toru",
+            "surname": "Hagakure",
+            "course": ["Melee combat","Support","Stealth"],
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/b/be/Toru_Hagakure_Portrait.png/revision/latest/scale-to-width-down/135?cb=20160619045903"
+        },{
+            "id": 17,
+            "name": "Katsuki",
+            "surname": "Bakugo",
+            "course": ["Melee combat","Ranged combat"],
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/c/cd/Katsuki_Bakugo_Portrait.png/revision/latest/scale-to-width-down/135?cb=20160619050033"
+        },{
+            "id": 18,
+            "name": "Izuku",
+            "surname": "Midoriya",
+            "course": ["Melee combat","Long-ranged combat"],
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/2/25/Izuku_Midoriya_Portrait.png/revision/latest/scale-to-width-down/135?cb=20160619050117"
+        },{
+            "id": 19,
+            "name": "Minoru",
+            "surname": "Mineta",
+            "course": ["Medium-ranged combat"],
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/6/6a/Minoru_Mineta_Portrait.png/revision/latest/scale-to-width-down/135?cb=20160619050156"
+        },{
+            "id": 20,
+            "name": "Momo",
+            "surname": "Yaoyorozu",
+            "course": ["Melee combat","Support"],
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/8/8d/Momo_Yaoyorozu_Portrait.png/revision/latest/scale-to-width-down/135?cb=20160619050232"
+        }
+    ],
+
+    "advisor": [
+        {
+            "id": 1,
+            "name": "Toshinori",
+            "surname": "Yagi",
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/e/ec/All_Might_Anime_Portrait.png/revision/latest/scale-to-width-down/135?cb=20200511210525"
+        },{
+            "id": 2,
+            "name": "Shoto",
+            "surname": "Aizawa",
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/b/ba/Eraser_Head_Anime_Portrait.png/revision/latest/scale-to-width-down/135?cb=20200606161947"
+        },{
+            "id": 3,
+            "name": "Keigo",
+            "surname": "Takami",
+            "image": "https://static.wikia.nocookie.net/bokunoheroacademia/images/d/d4/Hawks_Anime_Portrait.png/revision/latest/scale-to-width-down/135?cb=20200323125121"
+        }
+    ]
+}
