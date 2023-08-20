@@ -12,5 +12,5 @@ const props = defineProps({
 
 <template>
         <img :src="advisor.image" alt="image">
-        <h4>{{ advisor.name}} {{ advisor.surname }}</h4>
+        <h4>{{ advisor.name }} {{ advisor.surname }}</h4>
 </template>
