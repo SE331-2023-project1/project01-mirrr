@@ -7,6 +7,7 @@ export interface StudentItem {
 }
 
 export interface AdvisorItem {
+    id: number
     name: string
     surname: string
     image: string

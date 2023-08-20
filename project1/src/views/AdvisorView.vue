@@ -14,16 +14,7 @@ const advisors: Ref<Array<AdvisorItem[]>> = ref([])
 
 <template>
   <main>
-    <AdvisorCard v-for="advisor in advisors" :key="advisor.name" :student="advisor"></AdvisorCard>
+    <AdvisorCard v-for="advisor in advisors" :key="advisor.id" :advisor="advisor"></AdvisorCard>
   </main>
 </template>
 
-<style>
-/* @media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-} */
-</style>
