@@ -14,6 +14,8 @@ const students: Ref<Array<StudentItem[]>> = ref([])
 
 <template>
   <main class="font-mono text-center">
-    <StudentCard v-for="student in students" :key="student.id" :student="student"></StudentCard>
+    <div class="grid gap-20 grid-cols-3 grid-rows-3">
+      <StudentCard v-for="student in students" :key="student.id" :student="student"></StudentCard>
+    </div>
   </main>
 </template>
