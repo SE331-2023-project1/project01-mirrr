@@ -11,6 +11,39 @@ const props = defineProps({
 
 
 <template>
-        <img :src="student.image" alt="image">
+        <img :src="student.image" alt="image" class="object-scale-down h-48 w-96">
         <h4>{{ student.name}} {{ student.surname }}</h4>
 </template>
+
+<!-- <style scoped>
+.student-card {
+    padding: 20px;
+    width: 250px;
+    cursor: pointer;
+    border: 5px solid #ffffff;
+    margin-bottom: 18px;
+    margin-top: 18px;
+    border-radius: 15px;
+    margin-right: 60px;
+}
+
+
+
+.student-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 3px 12px 0 rgba(86, 18, 18, 0.2);
+}
+
+.student-link {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.image {
+    width: 200px;
+    height: 150px;
+    align-items: center;
+    margin-top: 10%;
+    border-radius: 10px
+}
+</style> -->
