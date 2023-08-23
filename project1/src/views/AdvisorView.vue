@@ -14,7 +14,9 @@ const advisors: Ref<Array<AdvisorItem[]>> = ref([])
 
 <template>
   <main class="font-mono text-center">
+    <div class="grid gap-20 grid-cols-3 grid-rows-3">
     <AdvisorCard v-for="advisor in advisors" :key="advisor.id" :advisor="advisor"></AdvisorCard>
+    </div>
   </main>
 </template>
 

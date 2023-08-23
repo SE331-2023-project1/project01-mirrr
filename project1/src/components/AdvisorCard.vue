@@ -11,6 +11,8 @@ const props = defineProps({
 
 
 <template>
+    <div class="border-2 border-indigo-600 h-50 w-52 flex flex-col items-center hover:shadow-lg hover:scale-110">
         <img :src="advisor.image" alt="image">
         <h4>{{ advisor.name }} {{ advisor.surname }}</h4>
+    </div>
 </template>
