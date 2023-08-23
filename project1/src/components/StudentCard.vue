@@ -11,8 +11,10 @@ const props = defineProps({
 
 
 <template>
-        <img :src="student.image" alt="image" class="object-scale-down h-48 w-96">
+    <div class="border-2 border-indigo-600 h-50 w-60 flex flex-col items-center">
+        <img :src="student.image" alt="image" class="object-scale-down h-36 w-57 mt-4">
         <h4>{{ student.name}} {{ student.surname }}</h4>
+    </div>
 </template>
 
 <!-- <style scoped>
