@@ -13,7 +13,7 @@ const advisors: Ref<Array<AdvisorItem[]>> = ref([])
 </script>
 
 <template>
-  <main>
+  <main class="font-mono text-center">
     <AdvisorCard v-for="advisor in advisors" :key="advisor.id" :advisor="advisor"></AdvisorCard>
   </main>
 </template>

@@ -13,7 +13,7 @@ const students: Ref<Array<StudentItem[]>> = ref([])
 </script>
 
 <template>
-  <main>
+  <main class="font-mono text-center">
     <StudentCard v-for="student in students" :key="student.id" :student="student"></StudentCard>
   </main>
 </template>
