@@ -42,7 +42,7 @@ AdvisorService.getAdvisorById(Number(props.id))
 <template>
     <div v-if="advisor">
         <div class="m-5">
-            <div class="border-2 bg-gradient-to-r from-[#075985] to-[#082f49] h-50 w-full flex md:flex-row gap-2 flex-col p-3 rounded-md">
+            <div class="font-mono text-2xl mx-auto border-2 bg-gradient-to-r from-[#075985] to-[#082f49] h-50 w-1/2 flex md:flex-row gap-2 flex-col p-3 rounded-md">
                 <div class="border-2 border-[#0c4a6e] h-55 w-80 flex flex-col items-center rounded-md">
                     <img :src="advisor.image" class="object-scale-down rounded-md">
                 </div>
@@ -52,6 +52,7 @@ AdvisorService.getAdvisorById(Number(props.id))
                     <p></p>
                 </div>
             </div>
+            
         </div>
     </div>
 </template>
