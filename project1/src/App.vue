@@ -11,6 +11,9 @@ import { RouterLink, RouterView } from 'vue-router'
             src="https://1000logos.net/wp-content/uploads/2021/11/My-Hero-Academia-Logo.png"
             alt="Logo"
           />
+        </div>
+        <div class="absolute top-0 right-0 mt-2 mr-3 text-lg rounded-md bg-white px-3">
+          <RouterLink class="text-black hover:font-bold" to="/comment">Comment</RouterLink>
         </div>        
     </nav>
     <div class="space-x-20 text-center font-mono text-2xl pt-2 pb-5">
