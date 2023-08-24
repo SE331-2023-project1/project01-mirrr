@@ -17,51 +17,59 @@ defineProps({
         <p>Course: {{ student.course }}</p>
     </div>
 </template>
---> 
+-->
 
 <!--Script-->
 <script setup lang="ts">
 import { ref } from 'vue'
 import type { Ref } from 'vue'
-import type { StudentItem,AdvisorItem } from '@/type';
-import StudentService from '@/services/StudentService';
-const student = ref<StudentItem | null> (null)
+import type { StudentItem, AdvisorItem } from '@/type'
+import StudentService from '@/services/StudentService'
+const student = ref<StudentItem | null>(null)
 const props = defineProps({
-    id: String
+  id: String
 })
 
 StudentService.getStudentById(Number(props.id))
-.then((response) => {
+  .then((response) => {
     student.value = response.data
-}).catch(error => {
+  })
+  .catch((error) => {
     console.log(error)
-})
+  })
 
-import AdvisorService from '@/services/AdvisorService';
-const advisor = ref<AdvisorItem | null> (null)
+import AdvisorService from '@/services/AdvisorService'
+const advisor = ref<AdvisorItem | null>(null)
 
 AdvisorService.getAdvisorById(Number(props.id))
-.then((response) => {
+  .then((response) => {
     advisor.value = response.data
-}).catch(error => {
+  })
+  .catch((error) => {
     console.log(error)
-})
+  })
 </script>
 
 <!--Template-->
 <template>
-    <div v-if = "student">
-        <div class="m-5">
-            <div class="border-2 bg-gradient-to-r from-[#075985] to-[#082f49] h-50 w-full flex md:flex-row gap-2 flex-col p-3 rounded-md">
-                <div class="border-2 border-[#0c4a6e] h-55 w-80 flex flex-col items-center rounded-md">
-                    <img :src="student.image" class="object-scale-down rounded-md">
-                </div>
-                <div class="border-2  border-[#94a3b8] bg-[#94a3b8] h-50 w-full flex flex-col items-left rounded-md">        
-                    <p>ID: {{ student.id }}</p>
-                    <p>Name-Surname: {{ student.name }} {{ student.surname }}</p>
-                    <p>Course: {{ student.course }}</p>
-                </div>
-            </div>
-        </div>
+  <div v-if="student">
+    <div
+      class="font-mono text-2xl mx-auto border-2 bg-gradient-to-r from-[#075985] to-[#082f49] h-50 w-1/2 flex md:flex-row gap-2 flex-col p-3 rounded-md"
+    >
+      <div class="border-2 border-[#0c4a6e] h-55 w-80 flex flex-col items-center rounded-md">
+        <img :src="student.image" class="object-scale-down rounded-md" />
+      </div>
+      <div
+        class="border-2 border-[#94a3b8] bg-[#94a3b8] h-50 w-full flex flex-col items-left rounded-md"
+      >
+        <p>ID: {{ student.id }}</p>
+        <p>Name-Surname: {{ student.name }} {{ student.surname }}</p>
+        <p>Course: {{ student.course }}</p>
+        <br>
+        <RouterLink class="mx-auto" to="/comment">
+          <button class="mt-4 px-4 py-2 bg-white text-black hover:font-bold rounded">Comment</button>
+        </RouterLink>
+      </div>
     </div>
+  </div>
 </template>
