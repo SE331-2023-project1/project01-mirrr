@@ -6,7 +6,7 @@ import axios from 'axios'
 import AdvisorService from '@/services/AdvisorService'
 import AdvisorCard from '@/components/AdvisorCard.vue';
 
-const advisors: Ref<Array<AdvisorItem[]>> = ref([])
+const advisors: Ref<AdvisorItem[]> = ref([])
   AdvisorService.getAdvisor().then((response) => {
     advisors.value = response.data
   })

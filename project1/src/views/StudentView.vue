@@ -17,10 +17,10 @@ const props = defineProps({
 })
 
 watchEffect(() => {
-  StudentService.getStudent(5, props.page).then((response: AxiosResponse<StudentItem[]>)=>{
-  students.value = response.data
-  totalStudent.value = response.headers['x-total-count']
-})
+  StudentService.getStudent(5, props.page).then((response: AxiosResponse<StudentItem[]>) => {
+    students.value = response.data
+    totalStudent.value = response.headers['x-total-count']
+  })
 })
 
 const hasNextPage = computed(() => {
@@ -30,22 +30,20 @@ const hasNextPage = computed(() => {
 </script>
 
 <template>
-  <main class="font-mono text-center">
-    <div class="grid gap-20 grid-cols-3 grid-rows-3">
-      <StudentCard v-for="student in students" :key="student.id" :student="student"></StudentCard>
-      <div class="pagination">
-
-        <RouterLink :to="{ name: 'student', query: { page: page - 1 } }" rel="prev"
-      v-if="page != 1">
-        Prev Page
-      </RouterLink>
-
-      <RouterLink :to="{ name: 'student', query: { page: page + 1 }}" rel="next"
-      v-if="hasNextPage">
-        Next Page
-      </RouterLink> 
-
+  <main class="font-mono flex justify-center">
+      <div>
+        <div class="grid gap-20 grid-cols-3 mx-auto">
+        <StudentCard v-for="student in students" :key="student.id" :student="student"></StudentCard>
       </div>
-    </div>
+      <div class="text-center my-10 space-x-10">
+        <RouterLink :to="{ name: 'student', query: { page: page - 1 } }" rel="prev" v-if="page != 1">
+          Prev Page
+        </RouterLink>
+
+        <RouterLink :to="{ name: 'student', query: { page: page + 1 } }" rel="next" v-if="hasNextPage">
+          Next Page
+        </RouterLink>
+      </div>
+      </div>
   </main>
 </template>
