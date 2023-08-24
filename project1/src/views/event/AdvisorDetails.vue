@@ -41,8 +41,17 @@ AdvisorService.getAdvisorById(Number(props.id))
 <!--Template-->
 <template>
     <div v-if="advisor">
-        <img :src="advisor.image">        
-        <p>ID: {{ advisor.id }}</p>
-        <p>Name-Surname: {{ advisor.name }} {{ advisor.surname }}</p>
+        <div class="m-5">
+            <div class="border-2 bg-gradient-to-r from-[#075985] to-[#082f49] h-50 w-full flex md:flex-row gap-2 flex-col p-3 rounded-md">
+                <div class="border-2 border-[#0c4a6e] h-55 w-80 flex flex-col items-center rounded-md">
+                    <img :src="advisor.image" class="object-scale-down rounded-md">
+                </div>
+                <div class="border-2  border-[#94a3b8] bg-[#94a3b8] h-50 w-full flex flex-col items-left rounded-md">        
+                    <p>ID: {{ advisor.id }}</p>
+                    <p>Name-Surname: {{ advisor.name }} {{ advisor.surname }}</p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
