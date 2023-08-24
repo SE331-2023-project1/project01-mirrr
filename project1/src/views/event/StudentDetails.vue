@@ -23,7 +23,7 @@ defineProps({
 <script setup lang="ts">
 import { ref } from 'vue'
 import type { Ref } from 'vue'
-import type { StudentItem } from '@/type';
+import type { StudentItem,AdvisorItem } from '@/type';
 import StudentService from '@/services/StudentService';
 const student = ref<StudentItem | null> (null)
 const props = defineProps({
@@ -37,6 +37,15 @@ StudentService.getStudentById(Number(props.id))
     console.log(error)
 })
 
+import AdvisorService from '@/services/AdvisorService';
+const advisor = ref<AdvisorItem | null> (null)
+
+AdvisorService.getAdvisorById(Number(props.id))
+.then((response) => {
+    advisor.value = response.data
+}).catch(error => {
+    console.log(error)
+})
 </script>
 
 <!--Template-->
