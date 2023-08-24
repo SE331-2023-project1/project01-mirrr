@@ -48,28 +48,49 @@ AdvisorService.getAdvisorById(Number(props.id))
   .catch((error) => {
     console.log(error)
   })
+
+  const comments = ref<string[]>([])
+  const comment = ref<string>('')
+  const submit = () => {    
+    if(comment.value === '') return
+    comments.value.push(comment.value)
+    comment.value = ""
+  }
+
 </script>
 
 <!--Template-->
 <template>
   <div v-if="student">
     <div
-      class="font-mono text-2xl mx-auto border-2 bg-gradient-to-r from-[#075985] to-[#082f49] h-50 w-1/2 flex md:flex-row gap-2 flex-col p-3 rounded-md"
-    >
-      <div class="border-2 border-[#0c4a6e] h-55 w-80 flex flex-col items-center rounded-md">
+      class="font-mono text-3xl mx-auto border-2 bg-gradient-to-r bg-green-700 h-50 w-1/2 flex md:flex-row gap-2 flex-col p-3 rounded-md">
+      <div class=" border-green-700 border-2 h-55 w-80 flex flex-col items-center rounded-md">
         <img :src="student.image" class="object-scale-down rounded-md" />
       </div>
       <div
-        class="border-2 border-[#94a3b8] bg-[#94a3b8] h-50 w-full flex flex-col items-left rounded-md"
+        class="pl-2 border-2 bg-white h-50 w-full flex flex-col items-left rounded-md"
       >
         <p>ID: {{ student.id }}</p>
         <p>Name-Surname: {{ student.name }} {{ student.surname }}</p>
         <p>Course: {{ student.course }}</p>
         <br>
-        <RouterLink class="mx-auto" to="/comment">
+
+
+        <!-- <RouterLink class="mx-auto" to="/comment">
           <button class="mt-4 px-4 py-2 bg-white text-black hover:font-bold rounded">Comment</button>
-        </RouterLink>
+        </RouterLink> -->
       </div>
+    </div>
+    <br>
+    <div class="text-center text-3xl">
+        <p class="pb-5">Comment:</p>
+        <textarea class="w-80 bg-white border-black border-2 h-10" v-model="comment"></textarea>
+        <br>
+        <button class="border px-3 bg-red-600 text-white text-2xl" @click="submit" >Submit</button>
+    </div>
+    <br>
+    <div class="text-3xl text-center">
+        <li v-for="commentItem in comments" v-bind:key="commentItem"> {{ commentItem }}</li>
     </div>
   </div>
 </template>
