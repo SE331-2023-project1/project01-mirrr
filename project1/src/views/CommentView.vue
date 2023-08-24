@@ -5,7 +5,6 @@
     <p class="text-3xl">Student:</p>
     <select v-model="selectedStudent" class="border-black border-2 w-96 h-10 text-xl">
       <option value="" disabled>Select Student</option>
-      <option v-for="student in students" :key="student.id" :value="student.id">{{ student.name }} {{ student.surname }}</option>
     </select>
     <br>    
     <br>
