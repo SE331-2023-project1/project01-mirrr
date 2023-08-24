@@ -24,6 +24,7 @@ defineProps({
 import { ref } from 'vue'
 import type { Ref } from 'vue'
 import type { StudentItem, AdvisorItem } from '@/type'
+import {useMessageStore} from "@/stores/message";
 import StudentService from '@/services/StudentService'
 const student = ref<StudentItem | null>(null)
 const props = defineProps({
@@ -39,6 +40,7 @@ StudentService.getStudentById(Number(props.id))
   })
 
 import AdvisorService from '@/services/AdvisorService'
+const store = useMessageStore()
 const advisor = ref<AdvisorItem | null>(null)
 
 AdvisorService.getAdvisorById(Number(props.id))
@@ -53,6 +55,10 @@ AdvisorService.getAdvisorById(Number(props.id))
   const comment = ref<string>('')
   const submit = () => {    
     if(comment.value === '') return
+    store.updateMessage('You are successfully added comment ')
+  setTimeout( () => {
+    store.resetMessage()
+  }, 3000)
     comments.value.push(comment.value)
     comment.value = ""
   }
