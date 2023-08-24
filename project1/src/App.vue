@@ -14,8 +14,8 @@ import { RouterLink, RouterView } from 'vue-router'
         </div>        
     </nav>
     <div class="space-x-20 text-center font-mono text-2xl pt-2 pb-5">
-          <RouterLink class="text-black" to="/">Student</RouterLink>
-          <RouterLink class="text-black" :to="{name:'advisor'}">Advisor</RouterLink>
+          <RouterLink class="text-black" :to="{name:'student'}">STUDENT</RouterLink>
+          <RouterLink class="text-black" :to="{name:'advisor'}">ADVISOR</RouterLink>
     </div>
     <RouterView />
   </header>
