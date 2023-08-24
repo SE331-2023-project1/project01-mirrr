@@ -13,5 +13,8 @@ const apiClient: AxiosInstance = axios.create({
 export default {
     getAdvisor(): Promise<AxiosResponse<AdvisorItem[]>> {
         return apiClient.get<AdvisorItem[]>('/advisor')
+    },
+    getAdvisorById(id: number): Promise<AxiosResponse<AdvisorItem>>{
+        return apiClient.get<AdvisorItem>('advisor/'+ id.toString())
     }
 }
