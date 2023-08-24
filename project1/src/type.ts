@@ -4,6 +4,7 @@ export interface StudentItem {
     surname: string
     course: string
     image: string
+    advisorID: number
 }
 
 export interface AdvisorItem {
